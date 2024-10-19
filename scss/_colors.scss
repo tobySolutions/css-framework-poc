@@ -1,0 +1,15 @@
+@import "./_variable.scss";
+
+@each $colorName, $colorValue in $style-type {
+    .bg-#{$colorName} {
+        background-color: $colorValue;
+    }
+    
+    .color-#{$colorName} {
+        color: $colorValue;
+    }
+
+    .border-#{$colorName} {
+        border-color: $colorValue;
+    }
+}

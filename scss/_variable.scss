@@ -1,0 +1,39 @@
+$body: #333;
+$primaryFont: "Open Sans", sans-serif;
+$secondaryFont: "Roboto", sans-serif;
+$white: #fff;
+$primary: #007bff;
+$secondary: #6c757d;
+$success: #28a745;
+$danger: #dc3545;
+$warning: #ffc107;
+$info: #117a8b;
+$muted: #c0c0c0;
+$light: #dae0e5;
+$dark: #1d2124;
+
+$style-type: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success": $success,
+  "danger": $danger,
+  "warning": $warning,
+  "info": $info,
+  "muted": $muted,
+  "light": $light,
+  "dark": $dark,
+);
+
+$grid__bp-sm: 576;
+$grid__bp-md: 768;
+$grid__bp-lg: 1024;
+$grid__bp-xl: 1800;
+$grid__cols: 12;
+$gap: 0.25;
+
+$spacers: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14, 16, 20, 24, 48, 64, 96);
+
+$sides: ("top", "left", "right", "bottom");
+
+
+$gridColumns: (1,2,3,4,5,6,7,8,9,10,11,12);

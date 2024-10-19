@@ -1,0 +1,70 @@
+@import "./_variable.scss";
+
+.grid {
+  display: grid;
+}
+
+@each $cols in $gridColumns {
+  .grid-cols-#{$cols} {
+    grid-template-columns: repeat($cols, minmax(0, 1fr));
+  }
+  .grid-col-span-#{$cols} {
+    grid-column-start: span $cols;
+  }
+
+  .md\:grid-cols-#{$cols} {
+    @media (min-width: #{$grid__bp-md}px) {
+      grid-template-columns: repeat($cols, minmax(0, 1fr));
+    }
+  }
+
+  .lg\:grid-cols-#{$cols} {
+    @media (min-width: #{$grid__bp-lg}px) {
+      grid-template-columns: repeat($cols, minmax(0, 1fr));
+    }
+  }
+
+  .md\:grid-cols-span-#{$cols} {
+    @media (min-width: #{$grid__bp-md}px) {
+      grid-column-start: span $cols;
+    }
+  }
+
+  .lg\:grid-cols-span-#{$cols} {
+    @media (min-width: #{$grid__bp-lg}px) {
+      grid-column-start: span $cols;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.flex-end {
+    justify-content: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}

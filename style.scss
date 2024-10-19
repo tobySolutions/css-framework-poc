@@ -1,0 +1,38 @@
+@import "./scss/_alerts.scss";
+@import "./scss/_colors.scss";
+@import "./scss/_spacing.scss";
+@import "./scss/_layout.scss";
+@import "./scss/_reset.scss";
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.container-fluid {
+  margin: 0 auto;
+  max-width: 1800px;
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+small {
+  display: block;
+  font-size: 0.25rem;
+}
+
+.col {
+  grid-row: row;
+  flex-grow: 1;
+  flex-direction: left;
+  margin: 0.25%;
+  float: left;
+}

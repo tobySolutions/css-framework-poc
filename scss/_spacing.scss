@@ -1,0 +1,21 @@
+@import "./_variable.scss";
+
+@each $space in $spacers {
+  .col-gap-#{$space} {
+    column-gap: #{$space/4}rem;
+  }
+  .row-gap-#{$space} {
+    row-gap: #{$space/4}rem;
+  }
+  .gap-#{$space} {
+    gap: #{$space/4}rem;
+  }
+  @each $side in $sides {
+    .m-#{$side}-#{$space} {
+      margin-#{$side}: #{$space/4}rem;
+    }
+    .p-#{$side}-#{$space} {
+      padding-#{$side}: #{$space/4}rem;
+    }
+  }
+}
